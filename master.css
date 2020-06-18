@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    background-color: white;
+    padding: 21px 0 21px 0;
+    position: fixed;
+    width: 100vw;
+}
+
+#navbar > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar > ul > li {
+    padding: 0 21px 0 21px;
+}
+
+nav > ul, nav > ul > li > a {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+}
+
+.nav-link {
+    padding: 9px;
+}
+
+.nav-link:hover {
+    font-size: 18px;
+}
+
+#contact-link {
+    border: 2px solid #940740;
+    border-radius: 10px;
+}
+
+#contact-link:hover {
+    background-color: #950740;
+    color: white;
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: #1A1A1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome-section > h1 {
+    color: #c3073f;
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    text-align: center;
+    align-self: center;
+}
+
+#welcome-section > p {
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    align-self: center;
+}
+
+#about {
+    height: 100vh;
+    background-color: #edc7b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about > p {
+    color: #AC3B61;
+    font-family: 'Bangers', sans-serif;
+    font-size: 25px;
+    width: 70%;
+    align-self: center;
+    line-height: 35px;
+    max-height: 100vh;
+}
+
+#projects {
+    height: 100vh;
+    background-color: #44318D;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    justify-content: center;
+}
+
+#projects > h1 {
+    color: #A4B3B6;
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    /* align-self: center; */
+}
+
+#project-links {
+    max-width: 50vw;
+    max-height: 40vh;
+    align-self: center;
+}
+
+
+.project-tile {
+    width: 100%;
+    max-height: 100vh;
+    padding-bottom: 20px;
+    background-color: #2A1B3D;
+    align-self: center;
+}
+
+#img-1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* max-height: 80vh; */
+}
+
+.project-tile > p {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#contact {
+    height: 100vh;
+    background-color: #FBE8A6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#links {
+    align-self: center;
+}
+
+.contact-links {
+    padding: 10px;
+    font-family: 'Raleway';
+}
+
+#profile-link {
+    border: 2px solid #24292E;
+    color: #24292E;
+    border-radius: 10px;
+}
+
+#profile-link:hover {
+    background-color: #24292E;
+    color: white;
+}
+
+#email {
+    border: 2px solid #303C6C;
+    color: #303C6C;
+    border-radius: 10px;
+}
+
+#email:hover {
+    background-color: #303C6C;
+    color: white;
+}
+
+#twitter {
+    border: 2px solid #1DA1F2;
+    color: #1DA1F2;
+    border-radius: 10px;
+}
+
+#twitter:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+
+@media (max-height: 500px) {
+
+    #navbar {
+        padding: 10px 0 10px 0;
+    }
+
+    #welcome-section {
+        padding: 100px 0 80px 0;
+    }
+
+    #welcome-section > h1, #projects > h1 {
+        font-size: 30px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .nav-link:hover {
+        font-size: 14px;
+    }
+
+    #welcome-section > p, #about > p {
+        font-size: 18px;
+    }
+
+    #about {
+        padding: 80px 0 300px 0;
+    }
+
+    #projects {
+        padding: 150px 0 250px 0;
+    }
+  
+    
+}
+
+@media(max-width: 400px) {
+    #navbar > ul{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    #navbar > ul > li {
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+  
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .nav-link:hover {
+        font-size: 14px;
+    }
+
+    #welcome-section > p, #about > p {
+        font-size: 18px;
+    }
+
+    #welcome-section > h1, #projects > h1 {
+        font-size: 30px;
+    }
+}
